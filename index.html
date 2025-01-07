@@ -97,13 +97,13 @@
                 cell.classList.add('x');
 
                 if (checkWin('X')) {
-                    message.textContent = `Hai vinto!`;
+                    message.textContent = `You win!`;
                     gameWon = true;
                     return;
                 }
 
                 if (checkTie()) {
-                    message.textContent = "Pareggio!";
+                    message.textContent = "It's a tie!";
                     gameWon = true;
                     return;
                 }
@@ -140,13 +140,13 @@
                 cells[bestMove].classList.add('o');
 
                 if (checkWin('O')) {
-                    message.textContent = `Il computer ha vinto!`;
+                    message.textContent = `Computer wins!`;
                     gameWon = true;
                     return;
                 }
 
                 if (checkTie()) {
-                    message.textContent = "Pareggio!";
+                    message.textContent = "It's a tie!";
                     gameWon = true;
                     return;
                 }
